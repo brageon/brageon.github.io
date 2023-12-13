@@ -1,0 +1,27 @@
+A T A G G A Z Z 3
+A T G S Z Z S T Z A Z S Z Z Z 7
+A G S Z J G S Z 1
+A G S Z A A G S Z J Z 6
+
+WRB RB MD VB VBG PRP$ NN NN 3
+WRB RB VBD DT NN NN DT JJ NN CC NN DT NN POS NN 7
+EX VBZ DT NN IN VBG DT NN 1
+EX VBZ DT NN PRP MD VB DT NN IN NN  6
+
+how beautifully can Sara sing her favorite song
+how carefully did the artist paint the detailed portrait and capture the subject's essence 7
+there is no point in continuing this argument 1
+there is no way we can finish this task without help 6
+
+ATGSIZ -> ACACEDF 1313546 22212
+WRB RB VBD DT IN NN
+WRB VBD PRP VB IN DT NN
+Where did he go in the morning?
+How did they arrive at the concert?
+Why did she walk in the rain?
+Why did they meet in the library?
+
+WRB VBD DT JJ NN -> AGIAZ
+Wherever glowed any proud sphere
+WRB VBD PRP VB IN DT NN -> AGIZ
+Where did he get into the book
