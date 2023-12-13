@@ -1,4 +1,4 @@
-# rest
+# ReST
 Heuristics to ranking matrix. This was meant for cognitive therapy by emotional awareness. In its current shape it can be used for creative writing to blogs.
 
 Misc files: helper, zeta, zipf, meshgrid, overlay, embed*. Matrix files: zscore, brute, helper, line-count, svm, kde, row-sums, means, eigen, symmetry. Data wrangling: stops, du, dell*, range. Match: pattern*, occur, find-gaps, rms-index, highscore, diffevol*, entity, harmony, optima. Rest: ranking, frequency, unit*, sentence, words, random, gaussian, combine, chunking, brute. Old: emails*, csv-list, cosine-folder. 
