@@ -1,5 +1,5 @@
-# ReST
-Heuristics to ranking matrix. This was meant for cognitive therapy by emotional awareness. In its current shape it can be used for creative writing to blogs.
+# ReST - heuristics to ranking
+This was meant for cognitive therapy by emotional awareness. In its current shape it can be used for creative writing to blogs. Why specific values before measure you might ask. Intuition. Celsius used water as unit and I use political rhetorics from 2018 as unit. Quadratic equation instead of 0 line. 
 
 Misc files: helper, zeta, zipf, meshgrid, overlay, embed*. Matrix files: zscore, brute, helper, line-count, svm, kde, row-sums, means, eigen, symmetry. Data wrangling: stops, du, dell*, range. Match: pattern*, occur, find-gaps, rms-index, highscore, diffevol*, entity, harmony, optima. Rest: ranking, frequency, unit*, sentence, words, random, gaussian, combine, chunking, brute. Old: emails*, csv-list, cosine-folder. 
 
