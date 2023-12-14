@@ -10,6 +10,6 @@ if __name__ == '__main__':
   print(words) #TGT JZJ AGA
 '''
 File: v22u.txt  (2860, 2872) (3754, 3766)
-File: v11u.txt  (2974, 2986), (3117, 3129)
-File: v9u.txt  (2888, 2900) (3191, 3203)
+grep -oP '.*away from us' genc.txt | wc -w
+pattern2.py give 6*1718 vs 1785*5.77
 '''
