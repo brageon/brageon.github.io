@@ -11,5 +11,5 @@ if __name__ == '__main__':
 '''
 File: v22u.txt  (2860, 2872) (3754, 3766)
 grep -oP '.*away from us' genc.txt | wc -w
-pattern2.py give 6*1718 vs 1785*5.77
+pattern2.py would give 6*1718 vs 1785*5.77
 '''
