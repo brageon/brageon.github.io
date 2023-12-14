@@ -1,5 +1,7 @@
 '''
-Used this before file chunking. Basically I reformat matrix to least common subset range. Making it a square and remove the need for rearranging matrix arithmetic including eigenvectors. I use expected value from every matrix file to check positions in matrix.txt  
+Used this before file chunking. Basically I reformat matrix to least row. Making it a square and remove the need for rearranging matrix arithmetic including eigenvectors. I use expected value from every matrix file to check positions in matrix.txt  
+
+awk '{if (NR==2) print $0}' far.txt | wc -w
 '''
 import os
 import numpy as np
