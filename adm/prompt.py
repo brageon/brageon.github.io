@@ -1,3 +1,6 @@
+'''
+It says string or bytes expected in translate. I will review the logic someday. 
+'''
 import re, csv, nltk, time, scipy, numpy, socket
 import threading, logging, warnings, subprocess
 from nlptools.preprocessing.tagging import MLTagger
@@ -15,9 +18,31 @@ server = ('localhost', 1234)
 class LDA:
     def __init__(self):
         self.tagger = MLTagger()
+    def translate(self, text):
+        tokens = nltk.word_tokenize(text)
+        tag_pairs = nltk.pos_tag(tokens)
+        convert = [tag_map.get(tag, tag) for _, tag in tag_pairs]
+        word_list = []
+        previous_word = None
+        word_count = {}
+        for word in convert:
+            if isinstance(word, float):
+                continue
+            if word in dict_map and isinstance(dict_map[word], str):
+                if word == previous_word:
+                    word_count[previous_word] += 1
+                else:
+                    word_list.append(dict_map[word])
+                    word_count[word] = 1
+                previous_word = word
+            else:
+                word_list.append(str(word))
+        return word_list   
     def amrita(self, words):
         prev_letter = None
-        words = translated.split(' ')
+        words = self.translate(words)
+        words = [str(word) for word in words]
+        words = ' '.join(words)
         line_sum = sum([float(dict_map.get(word, 0)) for word in words])
         count, special_cases = 0, 0
         line = ' '.join(words)
