@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Letter to Integer Translator</title>
+    <style>
+      .input-box,
+      .output-box {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-box">
+      <label for="input">Enter letters:</label>
+      <input type="text" id="input" onkeyup="translate()" />
+      <button onclick="translate()">Translate</button>
+    </div>
+    <div class="output-box">
+      <label for="output">Translated integers:</label>
+      <input type="text" id="output" disabled />
+    </div>
+
+    <script>
+      function translate() {
+        const inputText = document.getElementById('input').value;
+        const translations = [];
+
+        for (const letter of inputText) {
+          // Translate each letter to its corresponding integer
+          const asciiCode = letter.charCodeAt();
+          const integer = asciiCode - 96;
+          translations.push(integer);
+        }
+
+        // Display the translated integers in the output box
+        const outputText = translations.join(', ');
+        document.getElementById('output').value = outputText;
+      }
+
+      // Add event listeners to capture keyup and click events
+      const input = document.getElementById('input');
+      input.addEventListener('keyup', translate);
+      document.getElementById('translateButton').addEventListener('click', translate);
+    </script>
+  </body>
+</html>
+
