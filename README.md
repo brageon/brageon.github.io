@@ -1,7 +1,7 @@
 # RST - heuristics to ranking
 This was meant for cognitive therapy by emotional awareness. In its current shape it can be used for creative writing to blogs. Why specific values before measure you might ask. Intuition. Celsius used water as unit and I use political rhetorics from 2018 as unit. Zero product property is not applicable as first order unit. 
 
-Misc files: helper, zeta, zipf, meshgrid, overlay, embed*. Matrix files: zscore, brute, helper, line-count, svm, kde, row-sums, means, eigen, symmetry. Data wrangling: stops, du, dell*, range. Match: pattern*, occur, find-gaps, rms-index, highscore, diffevol*, entity, harmony, optima. Rest: ranking, frequency, unit*, sentence, words, random, gaussian, combine, chunking, brute. Old: emails*, csv-list, cosine-folder. IO: Bond2.js, Bond.html.  
+Misc files: helper, zeta, zipf, meshgrid, overlay, embed*. Matrix files: zscore, brute, helper, line-count, svm, kde, row-sums, means, eigen, symmetry. Data wrangling: stops, du, dell*, range. Match: pattern*, occur, find-gaps, rms-index, highscore, diffevol*, entity, harmony, optima. Rest: ranking, frequency, unit*, sentence, words, random, gaussian, combine, chunking, brute. Old: emails*, csv-list, cosine-folder. IO: bond2.js, bond.html.  
 
 Strategies I have tested until glove embeddings. 1) energy_bids.csv to wordlists (dam, dan, eno) from bag-of-words. 2) matrix arithmetic to svm. 3) frequency table to represent 1/6 samples. Sentence generator with statistics instead of neural networks. 3) is shortest and most prefered. 
 
