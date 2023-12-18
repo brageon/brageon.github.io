@@ -1,6 +1,0 @@
-DT A DT a DT alamoth DT alembroth DT all DT an DT barmcloth POS battalia DT behemoth DT berakoth DT besmooth DT betroth DT bewall DT both DT broadcloth DT broth DT bucktooth WRB chondriomere
-DT another POS anthesterin DT any DT archpall DT autocall DT azoth WRB decastere WRB demimentoniere DT dropcloth DT dustcloth DT each DT earthwall DT ensmall DT evenfall DT every DT expulser 
-DT eyeball POS fellatio DT footwall DT forsooth DT handcloth DT headcloth DT hellbroth WRB how POS kella POS mabi POS macropyramid WRB mameliere DT oilcloth DT oversmooth DT some POS tepee
-DT The DT the DT these DT this DT Those DT those DT tooth POS trepan DT troth DT waistcloth WRB wangtooth DT washcloth WDT waterchat WRB wauve WRB weaver WDT weever WRB werejaguar 
-WDT whatever WDT whatsomever WRB when WRB whencever WRB whenever WRB where WRB whereby WRB wheresomever WRB wheretoever WRB wherever WRB whey WDT which WDT whichsoever WRB whilere WRB whirken 
-WRB whithersoever WRB whitten WDT whomsoever WRB whosomever WRB whun WRB why WRB widewhere WRB wis WRB wolver WRB woy WRB wramp WRB wryly WRB wugg WRB wuss WRB wuzzle WDT wyver
