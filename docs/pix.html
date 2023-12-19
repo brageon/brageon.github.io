@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <title>.::::Numerical-Translator::::.</title>
+    <style>
+      .input-box,
+      .output-box {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <!-- Twitter Card data -->
+  
+<meta name="twitter:title" content=".::::Numerical-Translator::::.">
+<meta name="twitter:description" content="Browser based prototype for turning text into numbers.">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ojack/PIXELSYNTH/master/images/preview2.png">
+<!-- Open Graph data -->
+
+<meta property="og:image" content="https://raw.githubusercontent.com/ojack/PIXELSYNTH/master/images/preview2.png" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/raf.js"></script>
+    <script type="text/javascript" src="./js/nexusUI.js"></script>
+    <script src="./js/bundle.js"></script>
+  </head>
+  <body>
+  	<div id="credit"> by <A id="link" href="https://brageon.github.io">brageon</A> </div>
+    <div id="landing"><div id="logo"></div>
+    <div class="input-box">
+      <label for="input">Enter letters:</label>
+      <input type="text" id="input" onkeyup="translate()" />
+      <button onclick="translate()">Translate</button>
+    </div>
+    <div class="output-box">
+      <label for="output">Translated integers:</label>
+      <input type="text" id="output" disabled />
+    </div>
+    <script>
+      function translate() {
+        const inputText = document.getElementById('input').value;
+        const translations = [];
+
+        for (const letter of inputText) {
+          // Translate each letter to its corresponding integer
+          const asciiCode = letter.charCodeAt();
+          const integer = asciiCode - 96;
+          translations.push(integer);
+        }
+        // Display the translated integers in the output box
+        const outputText = translations.join(', ');
+        document.getElementById('output').value = outputText;
+      }
+      // Add event listeners to capture keyup and click events
+      const input = document.getElementById('input');
+      input.addEventListener('keyup', translate);
+      document.getElementById('translateButton').addEventListener('click', translate);
+    </script>
+  </body>
+</html>
