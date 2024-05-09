@@ -1,4 +1,4 @@
-const mySecret = process.env.DULL
+const mySecret = 'https://o66gcrisu76svuos65hnrembza0myxeg.lambda-url.eu-north-1.on.aws/'
 const promptButton = document.getElementById('promptButton');
 promptButton.addEventListener('click', async () => {
   const userInput = await prompt('Enter your message:');
