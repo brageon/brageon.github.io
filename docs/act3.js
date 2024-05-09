@@ -1,8 +1,9 @@
+const mySecret = process.env.DULL
 const promptButton = document.getElementById('promptButton');
 promptButton.addEventListener('click', async () => {
-  const userInput = await prompt('Reload S3 after 15 seconds:');
+  const userInput = await prompt('Patience is virtue:');
   if (!userInput) { return; }
-  try { const response = await fetch('https://o66gcrisu76svuos65hnrembza0myxeg.lambda-url.eu-north-1.on.aws/', {
+  try { const response = await fetch(mySecret, {
     method: 'POST', body: userInput,
     headers: { 'Content-Type': 'text/plain' }});
     window.open('https://ddarwin.s3.eu-north-1.amazonaws.com/dove.txt', '_blank');
