@@ -1,9 +1,8 @@
-const mySecret = 'https://o66gcrisu76svuos65hnrembza0myxeg.lambda-url.eu-north-1.on.aws/'
 const promptButton = document.getElementById('promptButton');
 promptButton.addEventListener('click', async () => {
   const userInput = await prompt('Enter your message:');
   if (!userInput) { return; }
-  try { const response = await fetch(mySecret, {
+  try { const response = await fetch('https://o66gcrisu76svuos65hnrembza0myxeg.lambda-url.eu-north-1.on.aws/', {
     method: 'POST', body: userInput,
     headers: { 'Content-Type': 'text/plain' }});
     window.open('https://ddarwin.s3.eu-north-1.amazonaws.com/dove.txt', '_blank');
