@@ -1,16 +1,17 @@
 import sys, boto3, botocore
-from flask import Flask, request, jsonify
-from botocore.exceptions import ClientError
+from flask_cors import CORS
+from flask import Flask, request
 sys.path.insert(1, '../')
 from login.mov import botox
 app = Flask(__name__)
 bot = botox(True)
 bot.setup()
+CORS(app)
 
 lambda_client = boto3.client('lambda') 
 @app.route('/', methods=['GET', 'POST'])
 def trigger_workflow():
-    message = request.data
+    message = request.form
     lambda_response = lambda_client.invoke(
     FunctionName='Darwin', Payload=message,
     InvocationType='RequestResponse')   
