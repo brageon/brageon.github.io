@@ -1,5 +1,5 @@
 # ETL skeleton for containers
-This should be a text-to-float translator with repo rest as backend. Task: Redirect user to S3 after prompt input. Why: (1) Flask endpoint with Lambda is replacing the need for manually updating FURL (CI). (2) Main advantage of API Gateway over FURL is throttling and quotas for preventing uncontrolled expenses inside usage plans. This repo is frontend for *rest* and the goal with this pipeline is to learn Docker.
+This should be a text-to-float translator with repo rest as backend. Task: Redirect user to S3 after prompt input. Why: (1) Flask endpoint with Lambda is replacing the need for manually updating FURL (CI). (2) Main advantage of API Gateway over FURL is throttling and quotas for preventing uncontrolled expenses inside usage plans. This repo is *rest* frontend and the goal with this pipeline is to learn Docker.
 
 ```
 Codespace is (1) track record without PRs: git stash for temporary git commit, git rev-list --count --all,
@@ -15,4 +15,4 @@ To delete cached files: git reset --soft HEAD~ && git commit --amend, git checko
 git commit -m "Ok", git branch -D main, git branch -m main, git push -f origin main, git gc --aggressive --prune=all 
 ```
 
-Proxy for Oauth inside ScrewFast template: Forward is Mockoon used to cloned JSON files. Reverse is ngrok for original APIs. AWS overview: Use SQS for UX transparency. RDS for CRUD caching server of S3. CB/CP to be triggered by S3 updates. SNS or gh webhook to collaborate with other devs. EventBridge to DLQ actions for unit testing. Step Functions to orchestrate ETL. Terraform is CD of SFW (CI). Optionally: 1) UID from browser (e.g. cookies) to write separate S3 files like oak_{n}.txt with provisioned concurrency **or** 2) Batch job of serverless worker pool with asynch modules (e.g. promise).
+Proxy for Oauth inside ScrewFast: Forward is Mockoon used to cloned JSON files. Reverse is ngrok for original APIs. AWS overview: Use SQS for UX transparency. RDS for CRUD caching server of S3. CB/CP to be triggered by S3 updates. SNS or gh webhook to collaborate with other devs. EventBridge to DLQ actions for unit testing. Step Functions to orchestrate ETL. Terraform is CD of SFW (CI). Optionally: UID from browser (e.g. cookies) to write separate oak_{n}.txt files with provisioned concurrency hence why I created *imgo*.
