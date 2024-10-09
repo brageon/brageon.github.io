@@ -1,7 +1,7 @@
 # ETL Workflow
 
 This should be a text-to-float translator with repo rest as backend. Task: Redirect user to S3 after prompt input. Why: 
-* Flask endpoint with Lambda is replacing the need for manually updating FURL (CI). 
+* Flask endpoint with Lambda to replace the need for manually updating FURL.  
 * Main advantage of API Gateway over FURL is throttling and quotas for preventing uncontrolled expenses inside usage plans. This repo is *rest* frontend and the goal with this pipeline is to learn AWS.
 
 ```
@@ -12,7 +12,8 @@ git rebase -i HEAD~122, sed -i 's/pick/drop/g' .git/rebase-merge/*-todo, git add
 ```
 
 Provisioned concurrency is discrete distribution of auto scaling. 
-* Rate for lambda quotas is 1 MB/s * 75 * 1.1 = 66-83 MB. Feature: media catalog updates.
+* Rate for lambda quotas is 1 MB/s * 75 * 1.1 = 66-83 MB.
+* Feature: media catalog updates.
 * Testing: npx localtunnel --port 8000, flask run -p 8000. No need for CDN.
 
 This proxy folder use Jinja2 for serving static files. Make sure to store npx url inside JS file. CodeBuild size from installation per invocation is not solved with cache layers. Benchmark of loading time without ECS. 
@@ -29,7 +30,8 @@ git commit -m "Ok", git branch -D main, git branch -m main, git push -f origin m
 
 * Proxy for Oauth inside ScrewFast: Forward is Mockoon used to cloned JSON files. Reverse is ngrok to original APIs.
 * AWS overview: Use SQS for UX transparency. RDS for CRUD caching server of S3. CB/CP to be triggered by S3 updates.
-* SNS or gh webhook to collaborate with other devs. EventBridge to DLQ actions for unit testing.
+* SNS or gh webhook to collaborate with other devs.
+* EventBridge to DLQ actions for unit testing.
 * Step Functions to orchestrate ETL. Terraform is CD of SFW (CI).
 
 **Optionally:** UID from web driver cookies to write separate oak_{n}.txt files with provisioned concurrency hence why *imgo*.
