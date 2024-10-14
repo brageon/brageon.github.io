@@ -1,6 +1,6 @@
 # AWS ETL Boilerplate
 
-Text-to-float translator with repo *rest* as backend. This repo is *rest* frontend. Task: Redirect user to S3 after prompt input.
+Text-to-float translator with repo *rest* as backend. Oak is *rest* frontend. Task: Redirect user to S3 after prompt input.
 * Flask endpoint with Lambda to replace the need for manually updating FURL.  
 * API Gateway beats FURL in throttling and quotas for preventing uncontrolled expenses inside usage plans. 
 
@@ -22,4 +22,4 @@ Users must wait and reload to see their metrics. Env vars is used inside NextJS 
 * EventBridge to DLQ actions for unit testing. EB support MongoDB.
 * Step Functions to orchestrate ETL. Terraform is CD of SFW (CI).
 
-**Optionally:** UID from web driver cookies to write separate oak_{n}.txt files with provisioned concurrency hence why *imgo*.
+**Optionally:** UID from web driver cookies to write separate files with provisioned concurrency hence why *imgo*.
