@@ -18,10 +18,11 @@ Users must wait and reload to see their metrics. Env vars is used inside NextJS 
 
 * SNS or gh webhook to collaborate with other devs.
 * SQS for UX transparency of loading time.
-* EventBridge to DLQ actions for unit testing. EB support MongoDB.
+* EventBridge to DLQ actions for unit testing.
 * RDS for CRUD caching server of S3 with SQLite.
 * CodeBuild to be triggered by S3 updates.
-* Step Functions to orchestrate ETL including ecommerce.
+* Step Functions to orchestrate e-commerce.
+* SFW alternatives: Argo, Temporal.io, Cadence.
 * Terraform is CD of SFW (CI). CircleCI maybe.
 
-**Optionally:** UID from web driver cookies to write separate files with provisioned concurrency hence why *imgo*.
+**Optional:** UID from web driver cookies to write separate files with provisioned concurrency hence why *imgo*.
