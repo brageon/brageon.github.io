@@ -14,12 +14,14 @@ This proxy folder use Jinja2 for serving static files. Make sure to store npx ur
 
 Users must wait and reload to see their metrics. Env vars is used inside NextJS or CodeBuild. Store furl inside GH repo secrets. Not your .env file. Learn more from MERN boilerplate. 
 
-**Cost:** API Gateway charges for the number of requests processed and data transferred, while Lambda charges for the duration your code executes and memory consumed. L saves money over Fargate when it runs a quarter or less of the day.
+**Cost:** API Gateway charges for the number of requests processed and data transferred, while Lambda charges for the duration your code executes and memory consumed. L saves money over Fargate when it runs a quarter or less of the day. **Time:** Proxy for Oauth inside Astro include Mockoon (forward), to clone JSON files, and Ngrok (reverse) to test original APIs.
 
-* Proxy for Oauth inside ScrewFast: Forward is Mockoon used to cloned JSON files. Reverse is ngrok to original APIs.
-* AWS overview: Use SQS for UX transparency. RDS for CRUD caching server of S3. CB to be triggered by S3 updates.
 * SNS or gh webhook to collaborate with other devs.
+* SQS for UX transparency of loading time.
 * EventBridge to DLQ actions for unit testing. EB support MongoDB.
-* Step Functions to orchestrate ETL. Terraform is CD of SFW (CI).
+* RDS for CRUD caching server of S3 with SQLite.
+* CodeBuild to be triggered by S3 updates.
+* Step Functions to orchestrate ETL including ecommerce.
+* Terraform is CD of SFW (CI). CircleCI maybe.
 
 **Optionally:** UID from web driver cookies to write separate files with provisioned concurrency hence why *imgo*.
